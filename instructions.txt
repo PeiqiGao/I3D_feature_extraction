@@ -1,0 +1,6 @@
+For RGB:
+python extract_features.py --mode rgb --load_model ./models/rgb_imagenet.pt --input_dir /path/to/frames --output_dir /path/to/output --batch_size 20 --sample_mode resize --no-usezip --frequency 6
+For flow:
+python extract_features.py --mode flow --load_model ./models/flow_imagenet.pt --input_dir /path/to/frames --output_dir /path/to/output --batch_size 20 --sample_mode resize --no-usezip --frequency 6
+For export:
+python extract_features_export.py --mode flow --load_model ./models/flow_imagenet --input_dir /path/to/frames --output_dir /path/to/output --batch_size 20 --sample_mode resize --no-usezip --frequency 6
