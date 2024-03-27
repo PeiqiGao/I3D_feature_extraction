@@ -183,8 +183,6 @@ def run(mode='rgb', load_model='', sample_mode='oversample', frequency=20,
     x = torch.randn(1, 3, 16, 224, 224, requires_grad=True)
     torch_out = i3d.extract_features(x)
 
-    print(torch_out)
-
     # Export the model
     torch.onnx.export(i3d,               # model being run
                     x,                         # model input (or a tuple for multiple inputs)
